@@ -76,7 +76,7 @@ kubectl create namespace noannotation
 kubectl patch namespace production -p '{"metadata":{"annotations":{"scheduler.alpha.kubernetes.io/node-selector":"env=production"}}}'
 ```
 
-After that you can deply various pods and observer where they are deployed or rejected:
+After that you can deploy various pods and observer where they are deployed or rejected:
 ```
 kubectl apply -f nodeselector/pod-dev.yaml
 kubectl apply -f nodeselector/pod-prod.yaml
